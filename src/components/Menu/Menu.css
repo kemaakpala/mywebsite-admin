@@ -1,0 +1,22 @@
+
+
+.MenuNav{
+    display:flex;
+    flex-flow: row;
+    box-sizing: border-box;
+    padding:10px;
+}
+.MenuList {
+    display:flex;
+    margin-left: auto;
+    width:50%;
+    justify-content: space-between;
+}
+
+.MenuList > li {
+    align-self: flex-end;
+}
+.MenuList > li:last-child > img{
+    border-radius: 50%;
+}
+
