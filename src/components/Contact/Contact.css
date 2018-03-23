@@ -16,7 +16,7 @@ ul{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     /* grid-template-rows: 100px 100px 100px; */
-    grid-gap: var(--grid2pxGap); 
+    grid-gap: var(--grid8pxGap); 
 }
 
 .ContactHeader {

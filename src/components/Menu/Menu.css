@@ -19,4 +19,6 @@
 .MenuList > li:last-child > img{
     border-radius: 50%;
 }
-
+.MenuSubNav{
+    display: none;
+}
