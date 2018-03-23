@@ -1,0 +1,93 @@
+/* Variable Declarations*/
+:root {
+    --gridColumns: repeat(6, 1fr);
+    --grid3Columns: repeat(3, 1fr);
+    --grid2pxGap: 2px;
+    --grid8pxGap: 8px;
+    --gridSpanColumns: 1/ -1; /*grid will span from 1st to last column*/
+}
+
+ul{
+    list-style: none;
+}
+
+.Skills {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* grid-template-rows: 100px 100px 100px; */
+    grid-gap: var(--grid2pxGap); 
+}
+
+.SkillsRow {
+    display: grid;
+    grid-column: var(--gridSpanColumns);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:20px;
+}
+
+.SkillBlock {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 40px 160px 60px;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    padding: 10px;
+    /* grid-template-areas: 
+        "t t t t t t"
+        "i d d d d d"
+        "a a a a a a" */
+}
+
+.SkillTitleContainer {
+    grid-column: var(--gridSpanColumns);
+    display: flex;
+}
+
+.SkillTitle{
+    align-self: flex-start;
+    margin-top: 0;
+    margin-bottom:10px;
+}
+
+.SkillContent{
+    grid-column: var(--gridSpanColumns);
+    display: flex;
+    justify-content: space-between;
+}
+
+.SkillDescription {
+    text-align: left;
+    margin-left: 8px;
+    margin-top: 0;
+}
+
+.SkillImgContainer{
+    flex: 1;
+} 
+.SkillFooter > a {
+    align-self: flex-start;
+    margin-bottom: 8px;
+}
+.SkillFooter{
+    grid-column: var(--gridSpanColumns);
+    display: flex;
+    flex-direction: column;
+}
+
+.SkillActions{
+    display: flex;
+    grid-template-rows: 20px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.SkillActions > button {
+    flex: 1;
+    margin-left: 5px;
+    height: 40px;
+}
+
+.SkillActions > button:first-child{
+    margin-left: 0;
+}

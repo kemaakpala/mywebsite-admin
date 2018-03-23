@@ -1,0 +1,49 @@
+/* Variable Declarations*/
+:root {
+    --gridColumns: repeat(6, 1fr);
+    --grid3Columns: repeat(3, 1fr);
+    --grid2pxGap: 2px;
+    --grid8pxGap: 8px;
+    --gridSpanColumns: 1/ -1; /*grid will span from 1st to last column*/
+}
+
+ul{
+    list-style: none;
+}
+
+.Contact {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* grid-template-rows: 100px 100px 100px; */
+    grid-gap: var(--grid2pxGap); 
+}
+
+.ContactHeader {
+    display: grid;
+    grid-column: var(--gridSpanColumns); 
+    grid-template-columns: var(--gridColumns);
+    grid-template-rows: 20px;
+}
+
+.ContactBody {
+    display: grid;
+    grid-column: var(--gridSpanColumns); 
+    grid-template-columns: var(--gridColumns);
+    grid-template-rows: 20px;
+}
+
+.ContactActions {
+    display: grid;
+    grid-template-columns: var(--grid3Columns);
+    grid-gap: var(--grid2pxGap);
+    grid-template-rows: 20px;
+}
+
+.ContactFooter {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: var(--gridSpanColumns); 
+}
+
+
