@@ -1,10 +1,10 @@
 /* Variable Declarations*/
-:root {
+/* :root {
     --gridColumns: repeat(6, 1fr);
     --grid3Columns: repeat(3, 1fr);
     --grid2pxGap: 2px;
     --grid8pxGap: 8px;
-    --gridSpanColumns: 1/ -1; /*grid will span from 1st to last column*/
+    --gridSpanColumns: 1/ -1; 
 }
 
 ul{
@@ -15,8 +15,8 @@ ul{
     height: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    /* grid-template-rows: 100px 100px 100px; */
-    grid-gap: var(--grid8pxGap); 
+    grid-gap: var(--grid8pxGap);
+    background-color:gray;
 }
 
 .ContactHeader {
@@ -46,4 +46,43 @@ ul{
     grid-column: var(--gridSpanColumns); 
 }
 
+ */
+.Contact {
+    height: 100%;
+    display: grid;
+    background-color: yellow;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 15px;
+    grid-row-gap: 10px;
+    box-sizing: border-box;
+    padding: 15px;
+}
 
+.ContactHeader {
+    grid-column: 1 / 1;
+    grid-row: 1/5;
+}
+.ContactHeader li {
+    padding-bottom: 15px;
+}
+.ContactBody {
+    grid-column: 2/ -1;
+    grid-auto-rows: minmax(200px, 1fr);
+    display: flex;
+    flex-flow: column wrap;
+}
+.ContactBody > li {
+    padding-bottom: 10px;
+}
+.ContactActions {
+    display: flex;
+    flex-flow: row wrap;
+}
+.ContactActions > li{
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+.ContactActions > li:nth-child(3){
+    margin-right:0;
+}

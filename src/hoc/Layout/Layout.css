@@ -1,0 +1,32 @@
+/*Variable Declaration*/
+:root{
+    --for-phone-only : 599px;
+    --for-table-portrait-up : 600px;
+    --for-table-landscape-up: 900px;
+    --for-desktop-up: 1200px;
+    --for-big-desktop-up: 1800px; 
+}
+
+.Container {
+    height: 100%;
+    display: grid;
+    /* grid-gap: 8px; */
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px, auto, 100px;
+    box-sizing: border-box;
+}
+
+header {
+    grid-column: 1/ -1;
+    background-color: blueviolet; 
+}
+
+main{
+    grid-column: 1/ -1;
+    background-color: greenyellow; 
+}
+
+footer{
+    grid-column: 1/ -1;
+    background-color: royalblue; 
+}

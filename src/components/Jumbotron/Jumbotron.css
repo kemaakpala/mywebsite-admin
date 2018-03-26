@@ -1,9 +1,10 @@
-.JumbotronBlock {
+/* .JumbotronBlock {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     margin-top: 60px;
     margin-bottom: 20px;
+    background-color:blue;
 }
 
 .JumbotronContent {
@@ -38,4 +39,41 @@
 
 .JumbotronContent > ul li:first-child {
     margin-left: 0;
+} */
+.Jumbotron{
+    padding: 15px;
+}
+
+.JumbotronBlock {
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    background-color: goldenrod;
+    padding: 15px;
+}
+
+.JumbotronContent {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #fff; 
+    width: 100%;
+}
+
+.JumbotronImage {
+    width: 100%;
+}
+
+.SocialList {
+    display: flex;
+    width: 300px;
+}
+.SocialList li:first-child{
+    margin-left: 0;
+}
+.SocialList li {
+    margin-left: 15px;
 }

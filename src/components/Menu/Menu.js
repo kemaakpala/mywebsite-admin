@@ -1,28 +1,34 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 
 import './Menu.css'
 
 const menu = () => (
 
-    <div class="MenuBar">
+    <Fragment>
         <nav className="MenuNav"> 
-        <img class="Logo" src="http://via.placeholder.com/107x130" alt="Logo image" />
-            <ul className="MenuList">
-                <li>About</li>
-                <li>Skills</li>
-                <li>Contact</li>
-                <li>Medium</li>
-                <li>
-                    <img src="http://via.placeholder.com/50x50" alt="profile image"/>
-                    <ul className="MenuSubNav">
-                        <li>Logout</li>
-                        <li>Settings</li>
-                    </ul>
-                </li>
-                
-            </ul>
+            <div className="NavTop">
+                <img className="Logo" src="http://via.placeholder.com/107x130" alt="Logo" />
+                <button className="NavToggle btn">
+                    <span className="fa fa-bars fa-w-14 fa-lg"></span>
+                </button>
+            </div>
+            <div className="NavBottom">
+                <ul className="MenuList">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Skills</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Medium</a></li>
+                    <li>
+                        <img src="http://via.placeholder.com/50x50" alt="profile"/>
+                        <ul className="MenuSubNav">
+                            <li><a href="">Logout</a></li>
+                            <li><a href="">Settings</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </nav>
-    </div>
+    </Fragment>
 )
 
 export default menu

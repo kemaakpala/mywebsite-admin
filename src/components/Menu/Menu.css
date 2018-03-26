@@ -1,24 +1,53 @@
+/*Variables Declaration*/
+.MenuNav {
+    --padding:15px;
+    --noPadding: 0;
 
-
+}
 .MenuNav{
     display:flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     box-sizing: border-box;
-    padding:10px;
-}
-.MenuList {
-    display:flex;
-    margin-left: auto;
-    width:50%;
-    justify-content: space-between;
+    width: 100%;
 }
 
-.MenuList > li {
-    align-self: flex-end;
+.NavToggle {
+  width: 44px;
+  height: 40px;
+  margin-left: auto;
 }
-.MenuList > li:last-child > img{
-    border-radius: 50%;
+.NavTop{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    padding:var(--padding);
 }
-.MenuSubNav{
+
+.NavBottom {
+    border-top: 1px solid black;
+    padding: var(--padding);
+    width:100%;
+}
+
+.MenuList {
+    width:100%;
+}
+.MenuList li {
+    margin-top: 15px;
+}
+.MenuList li:first-child{
+    margin-top: 0;
+}
+
+.MenuSubNav {
     display: none;
+}
+
+.MenuSubNav.active {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.MenuSubNav li {
+    width: 100%;
 }

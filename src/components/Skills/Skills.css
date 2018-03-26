@@ -1,22 +1,28 @@
-/* Variable Declarations*/
+/* Variable Declarations */
 :root {
     --gridColumns: repeat(6, 1fr);
     --grid3Columns: repeat(3, 1fr);
     --grid2pxGap: 2px;
     --grid8pxGap: 8px;
-    --gridSpanColumns: 1/ -1; /*grid will span from 1st to last column*/
+    --gridSpanColumns: 1/ -1; 
 }
 
-ul{
-    list-style: none;
+
+/* 
+:root {
+    --gridColumns: repeat(6, 1fr);
+    --grid3Columns: repeat(3, 1fr);
+    --grid2pxGap: 2px;
+    --grid8pxGap: 8px;
+    --gridSpanColumns: 1/ -1; 
 }
 
 .Skills {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    /* grid-template-rows: 100px 100px 100px; */
-    grid-gap: var(--grid2pxGap); 
+    grid-gap: var(--grid2pxGap);
+    background-color:red; 
 }
 
 .SkillsRow {
@@ -31,14 +37,9 @@ ul{
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr;
     box-sizing: border-box;
-    /* border: 1px solid black; */
     padding: 10px;
-    /* grid-template-areas: 
-        "t t t t t t"
-        "i d d d d d"
-        "a a a a a a" */
 }
-
+ 
 .SkillTitleContainer {
     grid-column: var(--gridSpanColumns);
     display: flex;
@@ -86,8 +87,67 @@ ul{
     flex: 1;
     margin-left: 5px;
     height: 40px;
+} 
+.SkillActions > button:first-child{
+    margin-left: 0;
+} */
+
+.Skills {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto; 
+    padding: 15px;
 }
 
-.SkillActions > button:first-child{
+.SkillBlock {
+    display: grid;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid gray;
+    background-color: #fff;border-radius: 8px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, auto-fit);
+    box-sizing: border-box;
+}
+
+.SkillTitleContainer {
+    grid-column: 1/-1;
+    grid-row: 1/1;
+    /* display: flex; */
+}
+
+.SkillContent {
+    grid-column: 1/ -1;
+    grid-row: 2/2;
+    display: flex;
+    flex-flow: row wrap;
+    padding-bottom: 15px;
+}
+
+.SkillContent .ImgContainer {
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+
+.ImgContainer img {
+    width: 100%;
+    display: block;
+}
+
+.SkillContent .SkillDescription{
+    margin-bottom: 8px;
+}
+
+.SkillFooter {
+    grid-column: 1/-1;
+    grid-row: 3/3;
+}
+.SkillActions > .btn {
+    margin-left: 8px;
+    width: 50px 50px;
+}
+
+.SkillActions > .btn:first-child {
     margin-left: 0;
 }
