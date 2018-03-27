@@ -139,7 +139,7 @@
     margin-bottom: 8px;
 }
 
-.SkillContent .btn {
+.SkillContent .BtnActions {
     width: 150px;
 }
 
@@ -147,11 +147,11 @@
     grid-column: 1/-1;
     grid-row: 3/3;
 }
-.SkillActions > .btn {
+.SkillActions > .BtnActions {
     margin-left: 8px;
-    width: 50px 50px;
+    width: 150px;
 }
 
-.SkillActions > .btn:first-child {
+.SkillActions > .BtnActions:first-child {
     margin-left: 0;
 }

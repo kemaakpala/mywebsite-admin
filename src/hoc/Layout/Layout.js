@@ -1,6 +1,6 @@
 import React, {Component} from "react"
 
-import "./Layout.css";
+import classes from "./Layout.css";
 import Menu from "../../components/Menu/Menu"
 import Footer from "../../components/Footer/Footer"
 
@@ -8,14 +8,14 @@ import Footer from "../../components/Footer/Footer"
 class Layout extends Component {
     render () {
         return (
-            <div className="Container">
-                <header>
+            <div className={classes.Container}>
+                <header className={classes.Header}>
                     <Menu />
                 </header>
-                <main>
+                <main className={classes.Main}>
                     {this.props.children}
                 </main>
-                <footer>
+                <footer className={classes.Footer}>
                     <Footer />
                 </footer>
             </div>

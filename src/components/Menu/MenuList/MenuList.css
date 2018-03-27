@@ -1,0 +1,20 @@
+.MenuList {
+    width:100%;
+}
+
+.MenuList li {
+    margin-top: 15px;
+}
+
+.MenuList li:first-child{
+    margin-top: 0;
+}
+
+.MenuSubNav {
+    display: none;
+}
+
+.MenuSubNav.active {
+    display: flex;
+    flex-flow: row wrap;
+}

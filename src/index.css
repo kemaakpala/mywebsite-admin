@@ -21,18 +21,6 @@ ul{
   padding: 0;
 }
 
-.btn {
-  border: 1px solid black;
-  border-radius: 8px;
-  box-sizing: border-box;
-  width: 100px;
-  text-align: center;
-  padding: 6px 12px;
-  cursor: pointer;
-  margin: 0;
-  font-size:1em;
-}
-
 h1,h2,h3,h4,h5,h6, p{
   margin:0;
 }

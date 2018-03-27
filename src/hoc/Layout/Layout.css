@@ -16,17 +16,17 @@
     box-sizing: border-box;
 }
 
-header {
+.Header {
     grid-column: 1/ -1;
     background-color: blueviolet; 
 }
 
-main{
+.Main{
     grid-column: 1/ -1;
     background-color: greenyellow; 
 }
 
-footer{
+.Footer{
     grid-column: 1/ -1;
     background-color: royalblue; 
 }
