@@ -1,4 +1,5 @@
 import React from "react";
+import '../BreakPoints/BreakPoints.css'
 import "./Contact.css";
 const contact = (props) => (
     <div className="Contact">
