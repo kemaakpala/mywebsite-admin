@@ -67,6 +67,19 @@
     width: 100%;
 }
 
+.JumbotronActions{
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 15px;
+}
+
+.JumbotronActions > Button{
+    margin-left: 8px;
+}
+
+.JumbotronActions > Button:first-child{
+    margin-left: 0;
+}
 .SocialList {
     display: flex;
     width: 300px;
