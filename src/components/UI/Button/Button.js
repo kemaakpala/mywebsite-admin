@@ -1,10 +1,15 @@
 import React from 'react'
 import classes from './Button.css'
 
-const button = (props)=> (
-    <button className={`${classes.btn} ${props.classes}`}>
-        {props.children}
-    </button> 
-)
+const button = (props)=> {
+    const customPropsClass = [classes.btn, props.classes]
+    return (
+        <button 
+            onClick={props.clicked} 
+            className={customPropsClass.join(' ')}>
+            {props.children}
+        </button> 
+    )
+}
 
 export default button

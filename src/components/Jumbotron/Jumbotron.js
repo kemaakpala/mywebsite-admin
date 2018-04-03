@@ -15,10 +15,12 @@ const jumbotron = (props) => {
                     <li><i className="fab fa-linkedin  fa-lg"></i></li>
                     <li><i className="fab fa-twitter  fa-lg"></i></li>
                     <li><i className="fab fa-github  fa-lg"></i></li>
-                    <li><i className="fab fa-free-code-camp  fa-lg"></i></li>
+                    <li><i className="fab fa-free-code-camp fa-lg"></i></li>
                 </ul>
             </div>
-            <img className={classes.JumbotronImage} src={JumbotronImage} alt={props.content.AltText}/>
+            <div className={classes.JumbotronImgContainer}>
+            <img className={classes.JumbotronImg} src={JumbotronImage} alt={props.content.AltText}/>
+            </div>
             <div className={classes.JumbotronActions}>
                 <Button><i className="fas fa-edit"></i> Edit</Button>
                 <Button><i className="fas fa-save"></i> Save</Button>

@@ -114,6 +114,8 @@
     grid-column: 1/-1;
     grid-row: 1/1;
     /* display: flex; */
+    /* display: flex; */
+    margin-bottom: 10px;
 }
 
 .SkillContent {
@@ -121,7 +123,7 @@
     grid-row: 2/2;
     display: flex;
     flex-flow: row wrap;
-    padding-bottom: 15px;
+    /* padding-bottom: 15px; */
 }
 
 .SkillContent .ImgContainer {
@@ -136,22 +138,59 @@
 }
 
 .SkillContent .SkillDescription{
-    margin-bottom: 8px;
+    margin-bottom: 15px;
 }
 
-.SkillContent .BtnActions {
-    width: 150px;
-}
 
 .SkillFooter {
     grid-column: 1/-1;
     grid-row: 3/3;
-}
-.SkillActions > .BtnActions {
-    margin-left: 8px;
-    width: 150px;
+    margin-top: 15px;
 }
 
-.SkillActions > .BtnActions:first-child {
-    margin-left: 0;
+.Skills  Button {
+    margin:0 0 8px;
+    width: 100%;
+}
+
+.Skills Button:last-child{
+    margin-bottom: 0;
+}
+
+
+@media (min-width:600px){
+
+    .Skills  Button {
+        width:auto;
+        margin: 0 8px 0 0;
+    }
+
+    .SkillContent {
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .SkillContent .ImgContainer {
+        width: 40%;
+    }
+
+    .SkillContent .SkillDescriptionContainer {
+        width: 55%;
+    }
+    
+    .SkillBlock:nth-child(even) .SkillDescription {
+        order: -1;
+    }
+    
+    /* .SkillBlock:nth-child(even) .SkillContent > button.BtnActions {
+        margin-top: -75px;
+        margin-left: auto;
+    } */
+}
+
+@media (min-width: 900px){
+    .Skills {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
 }

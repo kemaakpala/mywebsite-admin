@@ -5,7 +5,7 @@ import Button from'../UI/Button/Button'
 import Logo from '../Logo/Logo'
 import MenuList from './MenuList/MenuList'
 
-const menu = () => { 
+const menu = (props) => { 
     const MenuListObj = {
         item: [
             {
@@ -55,16 +55,27 @@ const menu = () => {
             }
         ]
     }
+    
+    let ToggleNavBottomArr = [classes.NavBottom, classes.Hidden];
+    if(props.show){
+        ToggleNavBottomArr = [classes.NavBottom, classes.Active];
+    }
+
     return (
         <Fragment>
             <nav className={classes.MenuNav}> 
                 <div className={classes.NavTop}>
                     <Logo SrcURL="http://via.placeholder.com/107x130" AltText="Logo" />
-                    <Button classes={classes.NavToggle}>
+                    <Button 
+                        classes={classes.NavToggle} 
+                        clicked={props.toggleClicked}
+                    >
                         <span className="fa fa-bars fa-w-14 fa-lg"></span>
                     </Button>
                 </div>
-                <div className={classes.NavBottom}>
+                
+                <div 
+                    className={ToggleNavBottomArr.join(' ')}>
                     <MenuList List={MenuListObj}/>
                 </div>
             </nav>

@@ -1,5 +1,4 @@
 import React from "react";
-import '../BreakPoints/BreakPoints.css'
 import classes from "./Contact.css";
 import Button from "../UI/Button/Button"
 
@@ -9,7 +8,7 @@ const contact = (props) => (
             <li>Full Name</li>
             <li>Email</li>
             <li>Subject</li>
-            <li>Message</li>
+            <li>Message</li>ya
             <li>Actions</li>
         </ul>
         <ul className={classes.ContactBody}>
@@ -24,11 +23,11 @@ const contact = (props) => (
                     faucibus risus egestas
             </li>
             <li>
-                <ul className={classes.ContactActions}>
-                    <li><Button ><i className="fas fa-reply"></i> Reply</Button></li>
-                    <li><Button ><i className="fas fa-edit"></i> Edit</Button></li>
-                    <li><Button ><i className="fas fa-trash-alt"></i>  Delete</Button></li>
-                </ul>
+                <div className={classes.ContactActions}>
+                    <Button ><i className="fas fa-reply"></i> Reply</Button>
+                    <Button ><i className="fas fa-edit"></i> Edit</Button>
+                    <Button ><i className="fas fa-trash-alt"></i>  Delete</Button>
+                </div>
             </li>
         </ul>
 
@@ -51,11 +50,11 @@ const contact = (props) => (
                     faucibus risus egestas
             </li>
             <li>
-                <ul className={classes.ContactActions}>
-                    <li><Button ><i className="fas fa-reply"></i> Reply</Button></li>
-                    <li><Button ><i className="fas fa-edit"></i> Edit</Button></li>
-                    <li><Button ><i className="fas fa-trash-alt"></i>  Delete</Button></li>
-                </ul>
+                <div className={classes.ContactActions}>
+                    <Button ><i className="fas fa-reply"></i> Reply</Button>
+                    <Button ><i className="fas fa-edit"></i> Edit</Button>
+                    <Button ><i className="fas fa-trash-alt"></i>  Delete</Button>
+                </div>
             </li>
         </ul>
         
@@ -78,11 +77,11 @@ const contact = (props) => (
                     faucibus risus egestas
             </li>
             <li>
-                <ul className={classes.ContactActions}>
-                    <li><Button ><i className="fas fa-reply"></i> Reply</Button></li>
-                    <li><Button ><i className="fas fa-edit"></i> Edit</Button></li>
-                    <li><Button ><i className="fas fa-trash-alt"></i>  Delete</Button></li>
-                </ul>
+                <div className={classes.ContactActions}>
+                    <Button ><i className="fas fa-reply"></i> Reply</Button>
+                    <Button ><i className="fas fa-edit"></i> Edit</Button>
+                    <Button ><i className="fas fa-trash-alt"></i>  Delete</Button>
+                </div>
             </li>
         </ul>
         
@@ -105,11 +104,11 @@ const contact = (props) => (
                     faucibus risus egestas
             </li>
             <li>
-                <ul className={classes.ContactActions}>
-                    <li><Button ><i className="fas fa-reply"></i> Reply</Button></li>
-                    <li><Button ><i className="fas fa-edit"></i> Edit</Button></li>
-                    <li><Button ><i className="fas fa-trash-alt"></i>  Delete</Button></li>
-                </ul>
+                <div className={classes.ContactActions}>
+                    <Button ><i className="fas fa-reply"></i> Reply</Button>
+                    <Button ><i className="fas fa-edit"></i> Edit</Button>
+                    <Button ><i className="fas fa-trash-alt"></i>  Delete</Button>
+                </div>
             </li>
         </ul>
     </div>

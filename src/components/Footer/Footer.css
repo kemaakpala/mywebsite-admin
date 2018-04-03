@@ -3,17 +3,28 @@
     flex-flow: row wrap;
     padding: 15px;
     font-size: 1em;
+    box-sizing:border-box;
+    justify-content: center;
 }
-.FooterRight {
-    display: flex;
-    flex-flow: row wrap;
-    width: 90%;
-}
+
 .FooterLogo{
     width: 62px;
     height: 62px;
     margin-right: 15px;
 }
-.FooterTimeStamp {
-    margin-left: auto;
+.Footer > div:first-child {
+    align-items: center;
+}
+.Footer > div:first-child,
+.Footer > div:last-child{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.Footer > div:last-child{
+    margin-top:10px;
+}
+
+@media (min-width:600px){
+
 }

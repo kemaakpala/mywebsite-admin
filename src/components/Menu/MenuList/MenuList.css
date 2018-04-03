@@ -1,4 +1,5 @@
 .MenuList {
+    font-size: 1.25em;
     width:100%;
 }
 
@@ -17,4 +18,27 @@
 .MenuSubNav.active {
     display: flex;
     flex-flow: row wrap;
+}
+
+@media (min-width: 600px) {
+    .MenuList {
+        display: flex;
+        flex-flow: row wrap;
+        width: auto;
+        margin-left: auto;
+    }
+
+    .MenuList li {
+        margin-top:0;
+        margin-right: 15px;
+        align-self: flex-end;
+    }
+
+    .MenuList li:nth-child(4){
+        margin-right: 0;
+    }
+
+    .MenuList li:last-child {
+        margin-right: 0;
+    }
 }

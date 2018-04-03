@@ -65,26 +65,43 @@ ul{
     grid-column: 1 / 1;
     grid-row: 1/5;
 }
+
 .ContactHeader li {
     padding-bottom: 15px;
 }
+
 .ContactBody {
     grid-column: 2/ -1;
     grid-auto-rows: minmax(200px, 1fr);
     display: flex;
     flex-flow: column wrap;
 }
+
 .ContactBody > li {
     padding-bottom: 10px;
 }
+
+.ContactBody > li:nth-child(4){
+    padding-bottom: 15px;
+}
+
 .ContactActions {
     display: flex;
     flex-flow: row wrap;
 }
-.ContactActions > li{
-    margin-right: 8px;
-    margin-bottom: 8px;
+
+.ContactActions  Button {
+    margin:0 0 8px;
+    width: 100%;
 }
-.ContactActions > li:nth-child(3){
-    margin-right:0;
+
+.ContactActions Button:last-child{
+    margin-bottom: 0;
+}
+
+@media (min-width:600px){
+    .ContactActions > Button {
+        width:auto;
+        margin: 0 8px 0 0;
+    }
 }
