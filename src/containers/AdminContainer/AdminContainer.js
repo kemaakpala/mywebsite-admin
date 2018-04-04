@@ -20,7 +20,30 @@ class adminController extends Component {
             content:{
                 
             }
-        }
+        },
+        modal:{
+            content: {
+                title: 'This is a modal',
+                text: 'this is a test text'
+            }
+        },
+        editing: false,
+        newSkill: false,
+        deleteSkill: false
+    }
+
+    addSkillHandler = (event) => {
+        this.setState({
+            newSkill: true
+        })
+    }
+    
+    editSkillsHandler = (event) => {
+        this.setState({editing: true})
+    }
+
+    deleteSkillsHandler = (event) => {
+        this.setState({deleteSkill: true})
     }
 
     render () {
@@ -28,7 +51,13 @@ class adminController extends Component {
         return (
             <Fragment>
                 <Jumbotron content={this.state.jumbotron.content}/>
-                <Skills content={this.state.content}/>
+                <Skills 
+                    content={this.state.content}
+                    editSkills={this.editSkillsHandler}
+                    deleteSkills={this.deleteSkillsHandler}
+                    editStart= {this.state.editing}
+                    addSkill={this.addSkillHandler} 
+                />
                 <Contact content={this.state.content}/>
             </Fragment>
         )

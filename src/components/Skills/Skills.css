@@ -104,7 +104,8 @@
     padding: 15px;
     margin-bottom: 15px;
     border: 1px solid gray;
-    background-color: #fff;border-radius: 8px;
+    background-color: #fff;
+    border-radius: 8px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, auto-fit);
     box-sizing: border-box;
@@ -113,8 +114,6 @@
 .SkillTitleContainer {
     grid-column: 1/-1;
     grid-row: 1/1;
-    /* display: flex; */
-    /* display: flex; */
     margin-bottom: 10px;
 }
 
@@ -136,11 +135,22 @@
     width: 100%;
     display: block;
 }
-
-.SkillContent .SkillDescription{
+.SkillContent .SkillDescriptionContainer{
+    width:100%;
+}
+.SkillContent .SkillDescription,
+textArea{
     margin-bottom: 15px;
 }
 
+textArea {
+    padding: 8px;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 183px;
+    border-radius: 8px;
+}
 
 .SkillFooter {
     grid-column: 1/-1;
@@ -157,6 +167,11 @@
     margin-bottom: 0;
 }
 
+
+.SkillActionHeader{
+    grid-column: 1/-1;
+    padding-bottom: 15px;
+}
 
 @media (min-width:600px){
 
@@ -181,6 +196,7 @@
     .SkillBlock:nth-child(even) .SkillDescription {
         order: -1;
     }
+
     
     /* .SkillBlock:nth-child(even) .SkillContent > button.BtnActions {
         margin-top: -75px;
