@@ -5,3 +5,8 @@
     box-sizing: border-box;
     display: block;
 }
+
+label{
+    display: block;
+    margin-bottom: 10px;
+}
