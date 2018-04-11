@@ -10,13 +10,11 @@ const formElementUseLogic = (props) => {
 
     switch (props.type) {
         case 'TextField':
-            element = <TextField label={props.label} {...props.elementConfig}/>
+        case 'Email':
+            element = <TextField label={props.label} {...props.elementConfig} changed={props.changehandler}/>
             break
         case 'TextArea':
             element = <TextArea label={props.label} {...props.elementConfig}/>
-            break
-        case 'Email':
-            element = <TextField label={props.label} {...props.elementConfig}/>
             break
         case 'Select':
             element = <Select label={props.label} {...props.elementConfig}/>
@@ -27,7 +25,7 @@ const formElementUseLogic = (props) => {
         case 'CheckBox':
             element = <CheckBox label={props.label} {...props.elementConfig}/>
             break
-        default: element = <TextField label={props.label} {...props.elementConfig}/>
+        default: element = <TextField label={props.label} {...props.elementConfig} changed={props.changehandler}/>
     }
 
     return (

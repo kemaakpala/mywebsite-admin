@@ -91,5 +91,7 @@
   },
   "eslintConfig": {
     "extends": "react-app"
-  }
+  },
+  "main": "index.js",
+  "license": "MIT"
 }

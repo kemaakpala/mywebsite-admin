@@ -4,10 +4,15 @@ import classes from './TextArea.css'
 const textAreaField = (props) => {
     return (
     <Fragment>
-        <label for={props.Id}>
+        <label htmlFor={props.Id}>
             {props.Label}
         </label>
-        <textarea id={props.Id} className={classes.TextArea}>{props.children}</textarea>
+        <textarea 
+            id={props.Id} 
+            className={classes.TextArea} 
+            value={props.value} 
+            onChange={props.changed}
+        ></textarea>
     </Fragment>
     )
 }

@@ -6,7 +6,9 @@ const button = (props)=> {
     return (
         <button 
             onClick={props.clicked} 
-            className={customPropsClass.join(' ')}>
+            className={customPropsClass.join(' ')}
+            {...props.elementConfig}
+        >
             {props.children}
         </button> 
     )

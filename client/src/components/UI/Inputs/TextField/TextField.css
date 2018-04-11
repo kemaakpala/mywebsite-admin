@@ -1,0 +1,16 @@
+.TextField {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 8px;
+    border: 1px solid #eaeaea;
+    border-bottom:3px solid #ccc;
+    padding: 10px 5px;
+    outline: none;
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+}

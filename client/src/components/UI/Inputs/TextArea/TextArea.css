@@ -1,9 +1,12 @@
 .TextArea {
     width: 100%;
-    border: 1px solid black;
+    border: black;
     border-radius: 8px;
+    border:1px solid  #eaeaea;
+    border-bottom:3px solid #ccc;
     box-sizing: border-box;
     display: block;
+    outline: none;
 }
 
 label{

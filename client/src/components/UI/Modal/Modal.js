@@ -11,7 +11,7 @@ const modal = (props) => {
             <div className={classes.Modal}>
                 <div className={classes.ModalBackDrop} onClick={props.overlayCloseModal}></div>
                 <div className={classes.ModalBox}>
-                <Button classes={classes.CloseModal} clicked={props.closeModal}>X</Button>
+                <Button classes={`${classes.CloseModal} ${classes.Danger}`} clicked={props.closeModal}><i className="fas fa-times fa-lg"></i></Button>
                     <div className={classes.ModalHeader}>
                         <h1 className={classes.Title}> {props.content.title}</h1>
                     </div>
@@ -19,8 +19,8 @@ const modal = (props) => {
                         <p> {props.content.text}</p>
                     </div>
                     <div className={classes.ModalActions}>
-                        <Button clicked={props.saveAction}>Save</Button>
-                        <Button clicked={props.cancelAction}>Cancel</Button>
+                        <Button classes={classes.BkgSuccess} clicked={props.saveAction}>Save</Button>
+                        <Button classes={classes.BkgDanger} clicked={props.cancelAction}>Cancel</Button>
                     </div>
                 </div>
             </div>

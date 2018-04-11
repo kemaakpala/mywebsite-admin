@@ -24,8 +24,8 @@ const contact = (props) => (
             </li>
             <li>
                 <div className={classes.ContactActions}>
+                    <Button ><i className="fas fa-check"></i> Read</Button>
                     <Button ><i className="fas fa-reply"></i> Reply</Button>
-                    <Button ><i className="fas fa-edit"></i> Edit</Button>
                     <Button ><i className="fas fa-trash-alt"></i>  Delete</Button>
                 </div>
             </li>
@@ -51,8 +51,8 @@ const contact = (props) => (
             </li>
             <li>
                 <div className={classes.ContactActions}>
+                    <Button ><i className="fas fa-times"></i> Read</Button>
                     <Button ><i className="fas fa-reply"></i> Reply</Button>
-                    <Button ><i className="fas fa-edit"></i> Edit</Button>
                     <Button ><i className="fas fa-trash-alt"></i>  Delete</Button>
                 </div>
             </li>
@@ -78,8 +78,8 @@ const contact = (props) => (
             </li>
             <li>
                 <div className={classes.ContactActions}>
+                    <Button ><i className="fas fa-times"></i> Read</Button>
                     <Button ><i className="fas fa-reply"></i> Reply</Button>
-                    <Button ><i className="fas fa-edit"></i> Edit</Button>
                     <Button ><i className="fas fa-trash-alt"></i>  Delete</Button>
                 </div>
             </li>
@@ -105,8 +105,8 @@ const contact = (props) => (
             </li>
             <li>
                 <div className={classes.ContactActions}>
+                    <Button ><i className="fas fa-check"></i> Read</Button>
                     <Button ><i className="fas fa-reply"></i> Reply</Button>
-                    <Button ><i className="fas fa-edit"></i> Edit</Button>
                     <Button ><i className="fas fa-trash-alt"></i>  Delete</Button>
                 </div>
             </li>
