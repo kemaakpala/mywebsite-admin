@@ -4,6 +4,8 @@ import Jumbotron from "../../components/Jumbotron/Jumbotron";
 import Skills from "../../components/Skills/Skills"
 import Contact from "../../components/Contact/Contact"
 
+import dummyData from "../../skillsData"
+
 class adminController extends Component {
     state = {
         jumbotron: {
@@ -17,9 +19,7 @@ class adminController extends Component {
             }
         },
         skills:{
-            content:{
-                
-            }
+            content: dummyData
         },
         showModal: false,
         editStart: false,
@@ -113,7 +113,7 @@ class adminController extends Component {
                     close={this.closeJumbotronHandler}
                 />
                 <Skills 
-                    content={this.state.content}
+                    content={this.state.skills.content}
                     edit={this.editSkillHandler}
                     delete={this.deleteSkillsHandler}
                     editStart= {this.state.editStart}
