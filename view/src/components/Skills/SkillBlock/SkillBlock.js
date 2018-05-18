@@ -6,8 +6,12 @@ import { SkillActionFooter } from "../SkillActions";
 import classes from "./SkillBlock.css"
 
 const SkillBlock = (props) => {
-    
-    const {id, title, SkillImage, description, editStart, edit, publish, save,close} = props
+    console.log('[props]: ', props)
+    const {
+        id, title, SkillImage, description, 
+        editStart, edit, publish, save, close,
+        addStart
+    } = props
 
     const textFieldChangeHandler = (event) => {
         console.log(event)
@@ -54,9 +58,8 @@ const SkillBlock = (props) => {
                             />
                             </Fragment>
                         : <Fragment>
-                        <p className={classes.SkillDescription}>{description}
-                        </p>
-                        <Button classes={classes.BtnActions} href=""><i className="fas fa-info"></i> Read more Link</Button>
+                        <p className={classes.SkillDescription} >{description}</p>
+                        <Button classes={classes.BtnActions} ><i className="fas fa-info"></i> Read more Link</Button>
                     </Fragment>
                 }
                 </div>
@@ -64,6 +67,7 @@ const SkillBlock = (props) => {
 
             <div className={classes.SkillBlockFooter}>
                 <SkillActionFooter 
+                    id={`actions_${id}`}
                     editStart= {editStart}
                     edit= {edit}
                     publish= {publish}

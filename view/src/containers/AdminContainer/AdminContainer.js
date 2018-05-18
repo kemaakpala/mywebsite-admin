@@ -18,19 +18,12 @@ class adminController extends Component {
                 }
             }
         },
-        skills:{
-            content: dummyData
-        },
         showModal: false,
         editStart: false,
         editJumbotronStart: false,
-        newSkill: false,
         newJumbotron: false,
-        deleteSkill: false,
         deleteJumbotron: false,
-        saveSkill: false,
         saveJumbotron: false,
-        showSkill: true,
         showJumbotron: true
     }
 
@@ -64,45 +57,13 @@ class adminController extends Component {
             editJumbotronStart: false
         })
     }
-
-    //Skill Handlers
-    addSkillHandler = (event) => {
-        this.setState({
-            newSkill: true
-        })
-    }
-    
-    editSkillHandler = (event) => {
-        this.setState({editStart: true})
-    }
-
-    deleteSkillsHandler = (event) => {
-        this.setState({
-            deleteSkill: true,
-            editStart: false,
-            showSkill: false
-        })
-    }
-    saveSkillHandler = (event) => {
-        this.setState({
-            saveSkill: true, 
-            editStart: false,
-            showModal: true
-        })
-    }
-    closeSkillHandler = (event) => {
-        this.setState({
-            editStart: false
-        })
-    }
     
     //Contact Handlers
 
     render () {
-        console.log(this.state.jumbotron.content);
         return (
             <Fragment>
-                <Jumbotron 
+                {/* <Jumbotron 
                     content={this.state.jumbotron.content}
                     edit={this.editJumbotronHandler}
                     delete={this.deleteJumbotronHandler}
@@ -111,19 +72,9 @@ class adminController extends Component {
                     save={this.saveJumbotronHandler}
                     publish={this.publishJumbotronHandler}
                     close={this.closeJumbotronHandler}
-                />
-                <Skills 
-                    content={this.state.skills.content}
-                    edit={this.editSkillHandler}
-                    delete={this.deleteSkillsHandler}
-                    editStart= {this.state.editStart}
-                    show={this.state.showSkill}
-                    add={this.addSkillHandler}
-                    new={this.state.newSkill} 
-                    save={this.saveSkillHandler}
-                    close = {this.closeSkillHandler}
-                />
-                <Contact content={this.state.content}/>
+                /> */}
+                <Skills />
+                {/* <Contact content={this.state.content}/> */}
             </Fragment>
         )
     }

@@ -1,32 +1,30 @@
 import React from 'react'
 import classes from './Jumbotron.css'
-import JumbotronImage from '../../assets/JumbotronImage.png'
-import Button from '../UI/Button/Button'
+//import JumbotronImage from '../../assets/JumbotronImage.png'
+import JumbotronBlock from "./JumbotronBlock/JumbotronBlock";
+import jumbotronData from "../../jumbotronData"
 
 const jumbotron = (props) => {
-    console.log(props);
+    console.log(props)
     return (
-    <div className={classes.Jumbotron}>
-        <div className={classes.JumbotronBlock}>
-            <div className={classes.JumbotronContent}>
-                <h1 className={classes.Title1}>{props.content.greeting}</h1>
-                <p className={classes.JumbotronDescription}>{props.content.description}</p>
-                <ul className={classes.SocialList}>
-                    <li><i className="fab fa-linkedin  fa-lg"></i></li>
-                    <li><i className="fab fa-twitter  fa-lg"></i></li>
-                    <li><i className="fab fa-github  fa-lg"></i></li>
-                    <li><i className="fab fa-free-code-camp fa-lg"></i></li>
-                </ul>
-            </div>
-            <div className={classes.JumbotronImgContainer}>
-            <img className={classes.JumbotronImg} src={JumbotronImage} alt={props.content.AltText}/>
-            </div>
-            <div className={classes.JumbotronActions}>
-                <Button><i className="fas fa-edit"></i> Edit</Button>
-                <Button><i className="fas fa-save"></i> Save</Button>
-                <Button><i className="fas fa-trash-alt"></i> Delete</Button>
-            </div>
-        </div>
+        <div className={classes.Jumbotron}>
+        {
+            jumbotronData.map((data)=>{
+            
+            if(!data.isActive){
+                return null
+            }
+            return (
+                 <JumbotronBlock 
+                    id={data._id['$oid']}
+                    title={data.title}
+                    description={data.description}
+                    socialLinks = {data.socialLinks}
+                 />
+            )})
+        }
+    
+        
     </div>
 )}
 

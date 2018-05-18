@@ -5,7 +5,7 @@ import Select from "./SelectFields/SelectField"
 import Radio from "./RadioButton/RadioButton";
 import CheckBox from "./CheckBox/CheckBox";
 
-const formElementUseLogic = (props) => {
+const formElementBUildLogic = (props) => {
     let element = null;
 
     switch (props.type) {
@@ -33,4 +33,4 @@ const formElementUseLogic = (props) => {
     )
 }
 
-export default formElementUseLogic
+export default formElementBUildLogic

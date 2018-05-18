@@ -6,8 +6,16 @@ const defaultData = [
         "title": "HTML5",
         "image": "html5.png",
         "description": "HTML5 (HyperText Markup Language 5) is used to layout content on the web. It imp" +
-                "roves the semantic meaning of web pages using tags. Click the button below to le" +
-                "arn more.",
+                "roves the semantic meaning of web pages using tags ttttt. Click the button below" +
+                " to learn more."+
+                "<!DOCTYPE html>"+
+                "<html>"+
+                "<body>"+
+                "<span style='color:red; font-weight:bold;'> test</span>"+
+                "<script type='text/javascript'> window.onload = console.log('hello world!');"+
+                "</script>"+
+                "</body>"+
+                "</html>",
         "link": "https://www.w3schools.com/html/html5_intro.asp",
         "isActive": true,
         "date": {
@@ -116,67 +124,7 @@ const defaultData = [
             "$date": "2017-06-22T17:25:32.323Z"
         },
         "__v": 0
-    }, {
-        "_id": {
-            "$oid": "594bfda1b6ac050011801d8e"
-        },
-        "title": "MongoDB",
-        "image": "mongoDBLogo.png",
-        "description": "MongoDb is an open source cross-platform document database system that allows yo" +
-                "u to easily scale  and stores data in a flexible JSON-like document. Click the b" +
-                "utton below to learn more.",
-        "link": "https://www.mongodb.com/what-is-mongodb",
-        "isActive": true,
-        "date": {
-            "$date": "2017-06-22T17:25:53.607Z"
-        },
-        "__v": 0
-    }, {
-        "_id": {
-            "$oid": "594bfdb2b6ac050011801d8f"
-        },
-        "title": "Express",
-        "image": "express.png",
-        "description": "Express is a minimal and flexible Node.js web application framework that provide" +
-                "s a robust set of features for web and mobile applications. Click the button bel" +
-                "ow to learn more.",
-        "link": "http://expressjs.com/",
-        "isActive": true,
-        "date": {
-            "$date": "2017-06-22T17:26:10.708Z"
-        },
-        "__v": 0
-    }, {
-        "_id": {
-            "$oid": "594bfdd4b6ac050011801d90"
-        },
-        "title": "Angular JS",
-        "image": "AngularJS-Shield.png",
-        "description": "AngularJS lets you extend HTML vocabulary for your application.The resulting env" +
-                "ironment is extraordinarily expressive, readable, and quick to develop. Click th" +
-                "e button below to learn more.",
-        "link": "https://angularjs.org/",
-        "isActive": true,
-        "date": {
-            "$date": "2017-06-22T17:26:44.958Z"
-        },
-        "__v": 0
-    }, {
-        "_id": {
-            "$oid": "594bfdf2b6ac050011801d91"
-        },
-        "title": "Node.JS",
-        "image": "nodejs.png",
-        "description": "Node.js is a JavaScript runtime built on Chrome’s V8 Javascript engine. It uses " +
-                "an event-driven, non-blocking I/O model that makes it lightweight and efficient." +
-                " Click the button below to learn more.",
-        "link": "https://nodejs.org/en/",
-        "isActive": true,
-        "date": {
-            "$date": "2017-06-22T17:27:14.275Z"
-        },
-        "__v": 0
-    }
+    },
 ]
 
 export default defaultData

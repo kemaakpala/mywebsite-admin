@@ -12,6 +12,7 @@ const textAreaField = (props) => {
             className={classes.TextArea} 
             value={props.value} 
             onChange={props.changed}
+            onBlur={props.blurred} 
         ></textarea>
     </Fragment>
     )

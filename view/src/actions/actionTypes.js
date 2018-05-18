@@ -1,0 +1,19 @@
+export const START_GET_SKILLS = 'START_GET_SKILLS'
+export const GET_SKILLS = 'GET_SKILLS'
+export const END_GET_SKILLS = 'END_GET_SKILLS'
+export const GET_SKILLS_ERROR = 'GET_SKILLS_ERROR'
+
+export const START_ADD_SKILL= 'ADD_SKILL_START'
+export const CANCEL_ADD_SKILL= 'CANCEL_ADD_SKILL'
+export const ADD_SKILL = 'ADD_SKILL'
+export const ADD_SKILL_ERROR = 'ADD_SKILL_ERROR'
+export const BUILD_FORM_DATA = 'BUILD_FORM_DATA'
+
+export const  IS_PRISTINE = 'IS_PRISTINE'
+export const  IS_DIRTY ='IS_DIRTY'
+
+export const EDIT_SKILL = 'EDIT_SKILL'
+export const SAVE_SKILL = 'SAVE_SKILL'
+export const DELETE_SKILL = 'DELETE_SKILL'
+export const PUBLISH_SKILL = 'PUBLISH_SKILL'
+export const UNPUBLISH_SKILL = 'UNPUBLISH_SKILL'

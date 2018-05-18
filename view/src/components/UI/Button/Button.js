@@ -4,7 +4,8 @@ import classes from './Button.css'
 const button = (props)=> {
     const customPropsClass = [classes.btn, props.classes]
     return (
-        <button 
+        <button
+            id={props.id} 
             onClick={props.clicked} 
             className={customPropsClass.join(' ')}
             {...props.elementConfig}

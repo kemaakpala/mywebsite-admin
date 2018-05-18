@@ -1,5 +1,5 @@
 import React from 'react'
-import classes from 'ContactBody.css'
+import classes from './ContactBody.css'
 import ContactActions from '../ContactActions/ContactActions';
 
 const ContactBody = (props) => {

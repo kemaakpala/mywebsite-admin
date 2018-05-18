@@ -10,7 +10,8 @@ const textField = (props) => {
                 id={props.Id} 
                 {...props.elementConfig} 
                 value={props.value}
-                onChange={props.changed} 
+                onChange={props.changed}
+                onBlur={props.blurred} 
             />
         </Fragment>
     )
